@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="raR-Fi-epa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Barcode Detection-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BarcodeDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sva-dW-zjd">
+                                <rect key="frame" x="16" y="72" width="343" height="420"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;QR code values&gt;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-Ha-hPA">
+                                <rect key="frame" x="16" y="500" width="343" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="H6q-Ha-DXd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmE-Pl-O3T">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uGX-Rc-YZ9"/>
+                                </constraints>
+                                <state key="normal" title="Choose Photo"/>
+                                <connections>
+                                    <action selector="onChooseImageButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egA-DU-iRa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Agk-Ha-hPA" secondAttribute="trailing" constant="16" id="1WE-s6-6Fu"/>
+                            <constraint firstItem="Sva-dW-zjd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="89p-xb-01O"/>
+                            <constraint firstItem="HmE-Pl-O3T" firstAttribute="top" secondItem="Agk-Ha-hPA" secondAttribute="bottom" constant="8" id="FXv-83-ARv"/>
+                            <constraint firstAttribute="trailing" secondItem="HmE-Pl-O3T" secondAttribute="trailing" constant="16" id="FoM-z9-Qbd"/>
+                            <constraint firstItem="HmE-Pl-O3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="HAd-2D-tRQ"/>
+                            <constraint firstItem="Agk-Ha-hPA" firstAttribute="top" secondItem="Sva-dW-zjd" secondAttribute="bottom" constant="8" id="Kns-V5-0l8"/>
+                            <constraint firstItem="Agk-Ha-hPA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="NBP-Cz-125"/>
+                            <constraint firstItem="Sva-dW-zjd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="72" id="TlQ-7b-4J1"/>
+                            <constraint firstItem="Sva-dW-zjd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pbR-9w-ddR"/>
+                            <constraint firstAttribute="bottom" secondItem="HmE-Pl-O3T" secondAttribute="bottom" constant="20" id="tO4-lK-CeX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Barcode Detection" id="ROW-5h-6pO"/>
+                    <connections>
+                        <outlet property="imageView" destination="Sva-dW-zjd" id="5DM-gz-sby"/>
+                        <outlet property="resultLabel" destination="Agk-Ha-hPA" id="I0R-R8-dAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RYm-PA-gL6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="raR-Fi-epa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dzK-GE-XYu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4T3-6d-4pg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8h3-y3-reb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="124"/>
+        </scene>
+    </scenes>
+</document>
