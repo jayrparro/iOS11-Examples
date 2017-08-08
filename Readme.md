@@ -8,7 +8,7 @@ Thanks.
 
 
 ## Build Requirements:
-- Xcode Beta 3
+- Xcode Beta 2
 - Swift 4 
 
 ## Code Examples
@@ -21,15 +21,19 @@ Thanks.
 
 - Face Landmarks Detection
 
-	![Face Detection	](./assets/face_feat_detect.png)
+	![Face Landmarks Detection](./assets/face_feat_detect.png)
 
 - Text Detection
 
-	![Face Detection	](./assets/text_detect.jpg)
+	![Text Detection](./assets/text_detect.jpg)
 
 - Barcode Detection
 
 - Object Tracking & Detection
 
-	![Face Detection	](./assets/object_track.jpg)
+	![Object Detection](./assets/object_track.jpg)
 
+
+### 2. ARKit
+
+![ARKit Demo](./assets/arkit_demo1.jpg)

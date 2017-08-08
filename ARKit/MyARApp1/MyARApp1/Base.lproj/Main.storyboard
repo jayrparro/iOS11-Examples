@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="MyARApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qRm-qR-vHq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pvQ-B3-rAJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TAW-Dj-aZR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfN-Tn-2Ky">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xY-xa-XC9">
+                                <rect key="frame" x="162" y="577" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7Qi-aj-PJM"/>
+                                    <constraint firstAttribute="height" constant="50" id="lae-q8-he7"/>
+                                </constraints>
+                                <state key="normal" title="⚱️"/>
+                                <connections>
+                                    <action selector="didTapVaseButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xnE-N5-Uwr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYQ-pl-mXP">
+                                <rect key="frame" x="232" y="577" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UwJ-RT-hMN"/>
+                                    <constraint firstAttribute="height" constant="50" id="zgu-iG-ANj"/>
+                                </constraints>
+                                <state key="normal" title="🔄"/>
+                                <connections>
+                                    <action selector="didTapResetButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="p3T-Cd-a4V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPn-oy-JZ7">
+                                <rect key="frame" x="92" y="577" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1JV-nJ-MzG"/>
+                                    <constraint firstAttribute="width" constant="50" id="q4K-lF-446"/>
+                                </constraints>
+                                <state key="normal" title="🌳"/>
+                                <connections>
+                                    <action selector="didTapPlantButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Nfk-IQ-cc6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1xY-xa-XC9" firstAttribute="leading" secondItem="BPn-oy-JZ7" secondAttribute="trailing" constant="20" id="0Pe-Ac-ITc"/>
+                            <constraint firstItem="pvQ-B3-rAJ" firstAttribute="top" secondItem="1xY-xa-XC9" secondAttribute="bottom" constant="40" id="EP6-j9-w5L"/>
+                            <constraint firstItem="pvQ-B3-rAJ" firstAttribute="top" secondItem="BPn-oy-JZ7" secondAttribute="bottom" constant="40" id="I7D-Ad-n38"/>
+                            <constraint firstItem="iYQ-pl-mXP" firstAttribute="leading" secondItem="1xY-xa-XC9" secondAttribute="trailing" constant="20" id="L15-QD-x6G"/>
+                            <constraint firstItem="1xY-xa-XC9" firstAttribute="centerX" secondItem="TAW-Dj-aZR" secondAttribute="centerX" id="Nhl-Zf-WSV"/>
+                            <constraint firstAttribute="trailing" secondItem="hfN-Tn-2Ky" secondAttribute="trailing" id="Saf-FB-cht"/>
+                            <constraint firstItem="hfN-Tn-2Ky" firstAttribute="leading" secondItem="TAW-Dj-aZR" secondAttribute="leading" id="Udy-Te-qZH"/>
+                            <constraint firstItem="pvQ-B3-rAJ" firstAttribute="top" secondItem="iYQ-pl-mXP" secondAttribute="bottom" constant="40" id="aOJ-yf-LoK"/>
+                            <constraint firstItem="pvQ-B3-rAJ" firstAttribute="top" secondItem="hfN-Tn-2Ky" secondAttribute="bottom" id="oaD-aE-3z0"/>
+                            <constraint firstItem="hfN-Tn-2Ky" firstAttribute="top" secondItem="TAW-Dj-aZR" secondAttribute="top" id="uEP-rw-1f9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="plantButton" destination="BPn-oy-JZ7" id="jLj-rH-OM4"/>
+                        <outlet property="resetButton" destination="iYQ-pl-mXP" id="n7M-vL-Fd7"/>
+                        <outlet property="sceneView" destination="hfN-Tn-2Ky" id="MRH-PK-V5O"/>
+                        <outlet property="vaseButton" destination="1xY-xa-XC9" id="QoB-3h-Kmx"/>
+                        <outlet property="view" destination="TAW-Dj-aZR" id="8k1-go-hQ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
