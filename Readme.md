@@ -35,9 +35,31 @@ Thanks.
 	![Object Detection](./assets/object_track.jpg)
 
 
+**Useful Links:**
+
+**Apple Vision Documentation**
+
+<https://developer.apple.com/documentation/vision>
+
+**WWDC 2017 Session**
+
+<https://developer.apple.com/videos/play/wwdc2017/506/>
+
+
 ### 2. ARKit
 
 ![ARKit Demo](./assets/arkit_demo1.jpg)
+
+
+**Useful Links:**
+
+**Apple ARKit Documentation**
+
+<https://developer.apple.com/documentation/arkit>
+
+**WWDC 2017 Session**
+
+<https://developer.apple.com/videos/play/wwdc2017/602/>
 
 
 ### 3. CoreML
@@ -46,3 +68,17 @@ This demo is using the Inception v3 trained model.
 You can download the model [here](https://developer.apple.com/machine-learning/).
 
 ![ARKit Demo](./assets/image_detect.jpg)
+
+**Useful Links:**
+
+**Apple CoreML Documentation:**
+<https://developer.apple.com/documentation/coreml>
+<https://developer.apple.com/machine-learning/>
+
+**WWDC 2017 Session**
+
+Intro to CoreML:
+<https://developer.apple.com/videos/play/wwdc2017/703/>
+
+CoreML in Depth:
+<https://developer.apple.com/videos/play/wwdc2017/710/>
