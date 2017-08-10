@@ -8,8 +8,9 @@ Thanks.
 
 
 ## Build Requirements:
-- Xcode Beta 2
-- Swift 4 
+- Xcode 9 Beta 2
+- Swift 4
+- iOS 11 
 
 ## Code Examples
 
@@ -40,5 +41,8 @@ Thanks.
 
 
 ### 3. CoreML
+
+This demo is using the Inception v3 trained model.
+You can download the model [here](https://developer.apple.com/machine-learning/).
 
 ![ARKit Demo](./assets/image_detect.jpg)
